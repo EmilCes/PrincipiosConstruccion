@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.9" prefHeight="200" prefWidth="320" style="-fx-background-color: gray;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="dividircuenta.FXMLCuentaController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <Label layoutX="122.0" layoutY="6.0" text="Dividir Cuenta" textFill="WHITE" />
+      <Separator layoutY="22.0" prefHeight="3.0" prefWidth="321.0" style="-fx-background-color: white;" />
+      <Label layoutX="13.0" layoutY="38.0" text="Ingresa el monto de la cuenta:" textFill="WHITE" />
+      <TextField fx:id="tfMontoCuenta" layoutX="188.0" layoutY="33.0" prefHeight="27.0" prefWidth="71.0" promptText="0.00" />
+      <Label layoutX="262.0" layoutY="38.0" text="\$" textFill="WHITE" />
+      <Label layoutX="13.0" layoutY="70.0" text="Ingresa el numero de personas:" textFill="WHITE" />
+      <TextField fx:id="tfNumeroPersonas" layoutX="188.0" layoutY="67.0" prefHeight="27.0" prefWidth="71.0" promptText="0" />
+      <Label layoutX="34.0" layoutY="125.0" text="Pago sin propina:" textFill="WHITE" />
+      <Label layoutX="33.0" layoutY="149.0" text="Pago con propina:" textFill="WHITE" />
+      <Label layoutX="33.0" layoutY="172.0" text="Monto total con propina:" textFill="WHITE" />
+      <Label fx:id="lbPagoSinPropina" layoutX="173.0" layoutY="128.0" text="0.00$" textFill="WHITE" />
+      <Label fx:id="lbPagoConPropina" layoutX="172.0" layoutY="149.0" text="0.00$" textFill="WHITE" />
+      <Label fx:id="lbMontoTotalPropina" layoutX="172.0" layoutY="173.0" text="0.00$" textFill="WHITE" />
+      <Button layoutX="237.0" layoutY="107.0" mnemonicParsing="false" onAction="#btnCalcular" text="Calcular" />
+    </children>
+</AnchorPane>

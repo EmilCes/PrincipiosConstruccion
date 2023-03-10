@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxhello.FXMLVistasController">
+   <children>
+      <MenuBar prefHeight="32.0" prefWidth="598.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="Opciones">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Ir a primer pestaña" />
+                  <MenuItem mnemonicParsing="false" text="Ir a última pestaña" />
+              <MenuItem mnemonicParsing="false" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Ayuda">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Acerca de..." />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TabPane layoutX="-1.0" layoutY="33.0" prefHeight="367.0" prefWidth="601.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="ComboBox">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="219.0" prefWidth="329.0">
+                     <children>
+                        <Label layoutX="169.0" layoutY="56.0" text="Selecciona una opción de la lista desplegada" textAlignment="CENTER" />
+                        <ComboBox fx:id="cbCarrera" layoutX="167.0" layoutY="107.0" prefHeight="27.0" prefWidth="245.0" />
+                        <Label fx:id="lbSeleccionCarrera" layoutX="168.0" layoutY="184.0" lineSpacing="1.0" prefHeight="17.0" prefWidth="247.0" textAlignment="CENTER" textFill="#4ec6a4" underline="true">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="RadioButton">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="31.0" layoutY="26.0" text="Selecciona un color">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <RadioButton fx:id="rbAzul" layoutX="59.0" layoutY="67.0" mnemonicParsing="false" text="Azul">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="tgColores" />
+                           </toggleGroup>
+                        </RadioButton>
+                        <RadioButton fx:id="rbVerde" layoutX="59.0" layoutY="117.0" mnemonicParsing="false" text="Verde" toggleGroup="$tgColores" />
+                        <RadioButton fx:id="rbAmarillo" layoutX="59.0" layoutY="167.0" mnemonicParsing="false" text="Amarillo" toggleGroup="$tgColores" />
+                        <Pane fx:id="paneFondoColor" layoutX="237.0" layoutY="37.0" prefHeight="219.0" prefWidth="333.0" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="CheckBox">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="131.0" layoutY="31.0" text="Selecciona el lenguaje de programación de tu preferencia" />
+                        <CheckBox fx:id="cbCMas" layoutX="182.0" layoutY="71.0" mnemonicParsing="false" text="C++" />
+                        <CheckBox fx:id="cbJava" layoutX="341.0" layoutY="71.0" mnemonicParsing="false" text="Java" />
+                        <CheckBox fx:id="cbCSharp" layoutX="182.0" layoutY="157.0" mnemonicParsing="false" text="C#" />
+                        <CheckBox fx:id="cbPhp" layoutX="342.0" layoutY="157.0" mnemonicParsing="false" text="PHP" />
+                        <Button layoutX="229.0" layoutY="232.0" mnemonicParsing="false" onAction="#clickMostrarSeleccion" text="Mostrar selección" />
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Selección de Imagen">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

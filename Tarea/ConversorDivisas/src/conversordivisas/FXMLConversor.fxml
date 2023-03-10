@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="335.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="conversordivisas.FXMLConversorController">
+    <children>
+        <Label fx:id="label" layoutX="126" layoutY="120" minHeight="16" minWidth="69" />
+      <TabPane layoutY="-1.0" prefHeight="200.0" prefWidth="335.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Convertir dólares a pesos">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label layoutX="24.0" layoutY="51.0" text="Pesos" textFill="WHITE" />
+                        <Label layoutX="22.0" layoutY="23.0" text="Dolares" textFill="WHITE" />
+                        <TextField fx:id="tfDolares" layoutX="71.0" layoutY="17.0" prefHeight="0.0" prefWidth="84.0" />
+                        <Label layoutX="161.0" layoutY="23.0" text="\$" textFill="WHITE" />
+                        <Label fx:id="lbPesos" layoutX="70.0" layoutY="52.0" prefHeight="17.0" prefWidth="85.0" textFill="WHITE" />
+                        <Label layoutX="161.0" layoutY="51.0" text="\$" textFill="WHITE" />
+                        <Button layoutX="212.0" layoutY="70.0" mnemonicParsing="false" onAction="#btnConvertirAPesos" text="Convertir" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Convertir pesos a dólares">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: grey;">
+                     <children>
+                        <Label layoutX="23.0" layoutY="23.0" text="Pesos" textFill="WHITE" />
+                        <TextField fx:id="tfPesos" layoutX="74.0" layoutY="18.0" prefHeight="13.0" prefWidth="102.0" />
+                        <Label layoutX="184.0" layoutY="23.0" text="\$" textFill="WHITE" />
+                        <Button layoutX="226.0" layoutY="54.0" mnemonicParsing="false" onAction="#btnConvertirADolares" text="Convertir" />
+                        <Label layoutX="22.0" layoutY="49.0" text="Dolares" textFill="WHITE" />
+                        <Label fx:id="lbDolares" layoutX="72.0" layoutY="49.0" prefHeight="17.0" prefWidth="103.0" textFill="WHITE" />
+                        <Label layoutX="183.0" layoutY="50.0" text="\$" textFill="WHITE" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+    </children>
+</AnchorPane>

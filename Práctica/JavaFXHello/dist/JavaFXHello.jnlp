@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="JavaFXHello.jnlp">
+  <information>
+    <title>JavaFXHello</title>
+    <vendor>cesar</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="JavaFXHello.jar" size="8335" download="eager" />
+  </resources>
+  <jfx:javafx-desc  width="800" height="600" main-class="javafxhello.JavaFXHello"  name="JavaFXHello" />
+  <update check="always"/>
+</jnlp>
